@@ -110,35 +110,7 @@ const Dashboard = () => {
                     <Pie data={data02} dataKey="sell" nameKey="month" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
                 </PieChart>
             </div>
-            {/* this is chart no 02 */}
-            <div className='mt-10 text-center mx-auto w-auto'>
-                <p className='text-lg font-bold  border-b-4 border-purple-400 mb-3 inline-block text-purple-500'>Per Sell Investment & Revenue</p>
-                <BarChart width={350} height={250} data={data}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="sell" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="revenue" fill="#8884d8" />
-                    <Bar dataKey="investment" fill="#82ca9d" />
-                </BarChart>
-            </div>
-            {/* this is chart no 03 */}
-            <div className='mt-10 text-center mx-auto w-auto'>
-                <p className='text-lg font-bold  border-b-4 border-purple-400 mb-3 inline-block text-purple-600'>Revenue of Month</p>
-                <LineChart width={350} height={250} data={data}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="month" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    {/* <Line type="monotone" dataKey="investment" stroke="#8884d8" /> */}
-                    <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
-
-                </LineChart>
-            </div>
-           
+            
 
         </div>
     );
